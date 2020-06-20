@@ -17,7 +17,7 @@ export default class Todo extends Component {
             create: true,
             error1: false,
             error2: false,
-            error3:false
+            error3: false
         }
     }
 
@@ -35,15 +35,15 @@ export default class Todo extends Component {
     }
 
     onCreate(e) {
-        this.setState({ create: true },() => {
-                this.onSubmit(e);
+        this.setState({ create: true }, () => {
+            this.onSubmit(e);
         })
     }
     onSubmit = (e) => {
         e.preventDefault();
         const { create, rows, title, description, itemIndex } = this.state;
-        
-        if(title.length > 0 && description.length > 0 ){
+
+        if (title !== '' && description !== '') {
 
             if (create) {
                 var array = [...rows];
@@ -63,13 +63,10 @@ export default class Todo extends Component {
                     this.setState({ title: '', description: '', create: true })
                 })
             }
-          
-        }else {
-            this.setState({error2:true})
+
+        } else {
+            this.setState({ error2: true })
         }
-        
-        
-        
     };
     onUpdate = (index) => {
         var array = [...this.state.rows];
@@ -80,14 +77,12 @@ export default class Todo extends Component {
             itemIndex: index,
             title: title,
             description: description,
-            error2:false
+            error2: false
         })
     }
 
     handleClose = () => {
-    this.setState({error1: false})
-    this.setState({error2:false})
-    this.setState({error3:false})
+        this.setState({ error1: false, error2: false, error3: false })
     }
     render() {
         const { title, description, rows } = this.state;
@@ -105,7 +100,7 @@ export default class Todo extends Component {
                 </Snackbar>
                 <Snackbar open={this.state.error3} autoHideDuration={5000} onClose={this.handleClose}>
                     <Alert onClose={this.handleClose} severity="info">
-                    Removed Successful 
+                        Removed Successful
                     </Alert>
                 </Snackbar>
                 <div className="container">
