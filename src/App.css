@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -36,3 +37,112 @@
     transform: rotate(360deg);
   }
 }
+
+
+.container{
+  /* background-color: #ccc;
+height: 100vh; */
+}
+
+.heading{
+  display: flex;
+}
+.heading h1{
+  align-items: flex-start;
+  margin-left: 25px;
+  color: #3c4760;
+}
+.heading span{
+  color:#dda91d;
+}
+
+.table-content{
+  width:80%;
+  margin:auto;
+}
+
+.content{
+  width:50%;
+  margin: auto;
+}
+
+.title{
+margin-bottom: 10px;
+}
+.discription{
+  margin-bottom: 35px;
+}
+.MuiInputBase-input{
+  color:#ccc !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+
+}
+.input {
+  background-color: #48556f;
+   /* border: 1px solid #ccc !important;   */
+   border-radius: 8px !important;
+}
+.tab-heading h4{
+  font-size:16px;
+  font-weight: 600px;
+  color: #a1a9b7;
+  line-height: 1px;
+}
+
+.button{
+background-color: #f1b91c !important;
+font-size: 16px !important;
+color:#2f2815 !important;
+font-weight: bold !important;
+border-radius: 8px !important;
+}
+
+
+.table-content{
+  margin-top:50px;
+  margin-bottom:30px;
+  box-shadow: 0px 0px 5px 0px #ccc;
+}
+
+.row{
+  border: 1px solid #ccc;
+}
+.col{
+  border: 1px solid #ccc;
+  padding: 5px 0 !important;
+}
+.col span{
+  font-size:14px;
+  color: #ccc;
+}
+.btn-col{
+  display: flex !important;
+  justify-content: space-around !important;
+  border-bottom: 0 !important;
+}
+.MuiTableCell-root{
+  padding:0 !important;
+}
+
+.action-btn{
+  color:#ccc !important;
+  margin:5px !important;
+  transform: color 2s;
+}
+.action-btn:hover{
+  color:#f1b91c !important;
+  /* border: 1px solid #f1b91c !important; */
+}
+
+
+
+
+  .MuiTableCell-root{
+    border:1 solid #ccc !important;
+  }
+.MuiTableCell-head{
+border: 1px solid #ccc !important;
+padding: 0 0 !important;
+line-height: 0 !important;
+  }
